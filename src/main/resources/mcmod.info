@@ -1,0 +1,16 @@
+[
+{
+  "modid": "flagtpr",
+  "name": "Flag TPR",
+  "description": "Tpr to players that flag by clicking on the flag",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["nur"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
