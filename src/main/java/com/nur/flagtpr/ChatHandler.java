@@ -8,7 +8,7 @@ import net.minecraftforge.client.event.ClientChatReceivedEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import java.util.regex.*;
 
-public class MyEventHandler {
+public class ChatHandler {
 	@SubscribeEvent
     public void onOtherChat(ClientChatReceivedEvent event)
     {
@@ -18,6 +18,6 @@ public class MyEventHandler {
 		if(m.find()) {
 			ChatStyle style = new ChatStyle().setChatClickEvent(new ClickEvent(Action.RUN_COMMAND, "/tpr "+m.group(1)));
 			event.message.setChatStyle(style);
-		};
+		}
     }
 }

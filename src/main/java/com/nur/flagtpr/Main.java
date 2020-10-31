@@ -14,6 +14,6 @@ public class Main
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
-    	MinecraftForge.EVENT_BUS.register(new MyEventHandler());
+    	MinecraftForge.EVENT_BUS.register(new ChatHandler());
     }
 }
