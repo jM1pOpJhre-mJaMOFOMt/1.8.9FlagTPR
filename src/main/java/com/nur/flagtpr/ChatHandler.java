@@ -12,9 +12,9 @@ public class ChatHandler {
 	@SubscribeEvent
     public void onOtherChat(ClientChatReceivedEvent event)
     {
-		String FLAG_REGEXP = "^\\[.+\\] (\\w+) VL \\d+";
-		Pattern FLAG_PATTERN = Pattern.compile(FLAG_REGEXP);
-		Matcher m = FLAG_PATTERN.matcher(event.message.getUnformattedText());
+		String flagRegexp = "^\\[.+\\] (\\w+) VL \\d+";
+		Pattern flagPattern = Pattern.compile(flagRegexp);
+		Matcher m = flagPattern.matcher(event.message.getUnformattedText());
 		if(m.find()) {
 			ChatStyle style = new ChatStyle().setChatClickEvent(new ClickEvent(Action.RUN_COMMAND, "/tpr "+m.group(1)));
 			event.message.setChatStyle(style);
