@@ -16,7 +16,7 @@ public class ChatHandler {
 		Pattern flagPattern = Pattern.compile(flagRegexp);
 		Matcher m = flagPattern.matcher(event.message.getUnformattedText());
 		if(m.find()) {
-			ChatStyle style = new ChatStyle().setChatClickEvent(new ClickEvent(Action.RUN_COMMAND, "/tpr "+m.group(1)));
+			ChatStyle style = new ChatStyle().setChatClickEvent(new ClickEvent(Action.SUGGEST_COMMAND, "/tpr "+m.group(1)));
 			event.message.setChatStyle(style);
 		}
     }
