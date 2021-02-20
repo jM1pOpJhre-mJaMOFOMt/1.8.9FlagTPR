@@ -2,7 +2,7 @@
 {
   "modid": "flagtpr",
   "name": "Flag TPR",
-  "description": "Tpr to players that flag by clicking on the flag",
+  "description": "TPR to players that flag by clicking on the flag",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
